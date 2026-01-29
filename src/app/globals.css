@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #FAF8F5;
+  --color-text: #2F2A26;
+  --color-accent: #C6A15B;
+}
+
+html,
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
