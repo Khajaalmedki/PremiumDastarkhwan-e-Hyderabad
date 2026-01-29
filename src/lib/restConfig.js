@@ -149,8 +149,8 @@ export const restaurantConfig = {
 
 */
 
-/*
-export const restaurantConfig = 
+export const restaurantConfig =
+
 {
   basicInfo: {
     name: "Dastarkhwan-e-Hyderabad",
@@ -165,16 +165,16 @@ export const restaurantConfig =
     country: "India",
   },
 
-  socials_ : {
+  socials_: {
     instagram: "https://instagram.com/dastarkhwanhyderabad",
     googleMaps: "https://maps.google.com/?q=Dastarkhwan+Hyderabad",
     facebook: "https://facebook.com/dastarkhwanhyderabad",
   },
 
-  contact_ : {
-      phone: "+91 98765 43210",
-      email: "contact@dastarkhwanhyderabad.com",
-    },
+  contact_: {
+    phone: "+91 98765 43210",
+    email: "contact@dastarkhwanhyderabad.com",
+  },
 
   home: {
     hero: {
@@ -187,22 +187,22 @@ export const restaurantConfig =
         "/homeImages/hero-image.jpg",
     },
 
-    featuredDishes_ : {
-      chicken_dum_biryani : {
+    featuredDishes_: {
+      chicken_dum_biryani: {
         name: "Chicken Dum Biryani",
         price: 280,
         veg: false,
         image:
           "/homeImages/FD-chicken-dum-biryani.jpg",
       },
-      mutton_biryani : {
+      mutton_biryani: {
         name: "Mutton Biryani",
         price: 360,
         veg: false,
         image:
           "/homeImages/FD-mutton-biryani.jpg"
       },
-      double_ka_meetha : { 
+      double_ka_meetha: {
         name: "Double Ka Meetha",
         price: 150,
         veg: true,
@@ -223,7 +223,7 @@ export const restaurantConfig =
       title: "A Glimpse of Our Menu",
       ctaLabel: "View Full Menu",
       ctaLink: "/menu",
-      images_ : {
+      images_: {
         img1: "/homeImages/MP_1.jpg",
         img2: "/homeImages/MP_2.jpg",
         img3: "/homeImages/MP_3.jpg",
@@ -231,15 +231,15 @@ export const restaurantConfig =
       },
     },
 
-    awards_ : {
-      times_food_award : {
+    awards_: {
+      times_food_award: {
         title: "Best Hyderabadi Restaurant",
         issuer: "Times Food Awards",
         year: 2023,
         image:
           "/homeImages/swiggy-awards.png",
       },
-      zomato_dining_awards : {
+      zomato_dining_awards: {
         title: "Top Biryani Destination",
         issuer: "Zomato Dining Awards",
         year: 2022,
@@ -248,8 +248,8 @@ export const restaurantConfig =
       },
     },
 
-    testimonials_ : {
-      testimonial_1 : {
+    testimonials_: {
+      testimonial_1: {
         quote:
           "The biryani here tastes exactly like the traditional Hyderabadi feasts we grew up with.",
         author: "Food Enthusiast, Hyderabad",
@@ -261,13 +261,13 @@ export const restaurantConfig =
       },
     },
 
-    locations_ : {
+    locations_: {
       banjara_hills: {
         name: "Banjara Hills",
         address: "Road No. 12, Banjara Hills, Hyderabad",
         mapLink: "https://maps.google.com/?q=Banjara+Hills+Hyderabad",
       },
-      gachibowli : {
+      gachibowli: {
         name: "Gachibowli",
         address: "Near Financial District, Hyderabad",
         mapLink: "https://maps.google.com/?q=Gachibowli+Hyderabad",
@@ -275,13 +275,13 @@ export const restaurantConfig =
     },
   },
 
-  menuConfig : {
+  menuConfig: {
     categories_: {
-      biryani: {   
+      biryani: {
         label: "Biryani",
         description: "Slow-cooked basmati rice layered with royal spices",
-        items_ : {
-          chicken_dum_biryani : {
+        items_: {
+          chicken_dum_biryani: {
             name: "Chicken Dum Biryani",
             description:
               "Classic Hyderabadi dum biryani with tender chicken and aromatic rice.",
@@ -345,7 +345,7 @@ export const restaurantConfig =
         label: "Starters",
         description: "Perfect beginnings to a royal feast",
         items_: {
-          chicken_65 : {
+          chicken_65: {
             name: "Chicken 65",
             description:
               "Crispy fried chicken tossed with curry leaves and green chillies.",
@@ -402,11 +402,11 @@ export const restaurantConfig =
           },
         },
       },
-      
+
       rotis: {
         label: "Rotis & Breads",
         description: "Freshly baked Indian breads",
-        items_ : {
+        items_: {
           naan: {
             name: "Butter Naan",
             description: "Soft leavened bread brushed with butter.",
@@ -443,7 +443,7 @@ export const restaurantConfig =
       desserts: {
         label: "Desserts",
         description: "Traditional Hyderabadi sweets",
-        items_ : {
+        items_: {
           double_ka_meetha: {
             name: "Double Ka Meetha",
             description:
@@ -471,6 +471,6 @@ export const restaurantConfig =
     }
   }
 
-}; */
+};
 
 

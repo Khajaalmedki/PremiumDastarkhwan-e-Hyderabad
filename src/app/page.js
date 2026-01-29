@@ -1,34 +1,19 @@
-'use client'
+import { Hero } from "@/components/home/Hero";
+import { OurStory } from "@/components/home/OurStory";
+import { FeaturedMenu } from "@/components/home/FeaturedMenu";
+import { Testimonials } from "@/components/home/Testimonials";
+import { Footer } from "@/components/Footer";
+import { Navbar } from "@/components/Navbar";
 
-//import { restaurantConfig } from "@/lib/restConfig";
-
-import HomeHeader from "@/components/home/HomeHeader";
-import HeroSection from "@/components/home/HeroSection";
-import FeaturedDishes from "@/components/home/FeaturedDishes";
-import LegacySection from "@/components/home/LegacySection";
-import MenuGlimpse from "@/components/home/MenuGlimpse";
-import AwardsSection from "@/components/home/AwardsSection";
-import TestimonialsSection from "@/components/home/TestimonialsSection";
-import LocationsSection from "@/components/home/LocationsSection";
-import HomeFooter from "@/components/home/HomeFooter";
-
-import { useRestaurantConfig } from '@/context/RestaurantConfigContext'
-
-export default function HomePage() {
-  // const { home } = restaurantConfig;
-  const home = useRestaurantConfig().home
-
+export default function Home() {
   return (
-    <main>
-      <HomeHeader />
-      <HeroSection data={home.hero} />
-      <FeaturedDishes data={home.featuredDishes_} />
-      <LegacySection data={home.legacy} />
-      <MenuGlimpse data={home.menuPreview} />
-      <AwardsSection data={home.awards_} />
-      <TestimonialsSection data={home.testimonials_} />
-      <LocationsSection data={home.locations_} />
-      <HomeFooter />
+    <main className="min-h-screen bg-background text-foreground selection:bg-accent/20">
+      <Navbar />
+      <Hero />
+      <OurStory />
+      <FeaturedMenu />
+      <Testimonials />
+      <Footer />
     </main>
   );
 }

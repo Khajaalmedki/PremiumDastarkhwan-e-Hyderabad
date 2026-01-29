@@ -1,29 +1,41 @@
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
-
+import { Playfair_Display, Lato } from "next/font/google";
 import "./globals.css";
-import { Playfair_Display, Inter } from "next/font/google";
-import { fetchProjectConfig } from "@/lib/fetchConfig";
 import { RestaurantConfigProvider } from "@/context/RestaurantConfigContext";
+import { fetchProjectConfig } from "@/lib/fetchConfig";
+import { restaurantConfig as fallbackConfig } from "@/lib/restConfig";
 
-const serif = Playfair_Display({
+const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-serif",
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
-const sans = Inter({
+const lato = Lato({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
+  weight: ["300", "400", "700"],
 });
 
-export default async function RootLayout({ children }) {
+export const metadata = {
+  title: "Dastarkhwan-e-Hyderabad | Authentic Hyderabadi Cuisine",
+  description: "Experience the royal culinary heritage of Hyderabad. Slow-cooked, authentic, and timeless.",
+};
 
-  const restaurantConfig = await fetchProjectConfig()
+export default async function RootLayout({ children }) {
+  let config;
+  try {
+    config = await fetchProjectConfig();
+  } catch (e) {
+    console.error("Failed to fetch config, using fallback");
+    config = fallbackConfig;
+  }
 
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
-      <body>
-        <RestaurantConfigProvider config={restaurantConfig}>
+    <html lang="en">
+      <body className={`${playfair.variable} ${lato.variable} antialiased selection:bg-accent/20`}>
+        <RestaurantConfigProvider config={config}>
           {children}
         </RestaurantConfigProvider>
       </body>

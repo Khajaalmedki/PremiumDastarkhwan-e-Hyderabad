@@ -1,0 +1,49 @@
+/* Colors */
+:root {
+  --primary-bg: #FAF8F4;
+  --accent-color: #5C2A21;
+  --text-color: #3A3A3A;
+  --subtle-text: #6A6A6A;
+}
+
+/* Typography */
+body {
+  font-family: "Libre Baskerville", serif;
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.6;
+  color: var(--subtle-text);
+}
+
+/* Spacing Helpers */
+.section {
+  padding: 3rem 1.5rem;
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* Elegant Button */
+.btn {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #7A3B2F;
+}
